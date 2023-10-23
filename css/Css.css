@@ -52,4 +52,93 @@ text-decoration-style: double;
 font-family:fantasy;
 font-size: 30px;
 }
+.menu-container{
+  display:flex;
+  grid-template-columns:200px 1fr ;
+  color: white;
+}
+ul{
+  display: flex;
+  align-items: center;
+}
+li{
+  margin: 0 50px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+*{margin: 5px;
+box-sizing: border-box;
+}
+
+body{
+  height: 95vh;
+  background: rgb(194, 176, 176);
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  flex-direction:column;
+}
+header{
+  background: blue ;
+  padding:  2em 0 2em 0;
+}
+.main{
+  display:flex;
+  flex: 1;
+}
+.left{
+  background: blue;
+  padding: 3em 0 3em 0;
+  flex:1 1 100px;
+}
+main{
+  background: rgb(0, 157, 255);
+  padding :3em 0 3em 0;
+  flex:5 5 150px;
+}
+.right{
+  background:rgb(28, 165, 28);
+  padding:3em 0 3em 0;
+  flex:1 1 100px;
+}
+footer{
+  background: rgb(0, 0, 0);
+  padding: 1em 0 1em 0;
+}
+
+@media screen and (max-width:760px) {
+  .left, .main, .right {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+
+button{
+  background-color: coral;
+  border: none;
+}
+.positions{
+  flex: content;
+  position: static;
+  top:100px;
+  left:1px;
+  padding: 20px;
+  font-size: 18px;
+}
+.positionad{
+  flex: content;
+  position:static;
+  font-size: 18px;
+  top:100px;
+  padding: 20px;
+}
+
+
+
+
 </style>
