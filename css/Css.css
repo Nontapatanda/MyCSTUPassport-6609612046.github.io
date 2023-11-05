@@ -110,12 +110,59 @@ footer{
   padding: 1em 0 1em 0;
 }
 
-@media screen and (max-width:760px) {
+@media screen and (min-width:600px) {
   .left, .main, .right {
     width: 100%;
     flex-direction: column;
-  }
 }
+}
+@media screen and (min-width:768px){
+  .left, .main, .right {
+    width: 100%;
+    flex-direction: column;
+}
+}
+
+@media screen and (min-width:992px){
+  .main{
+    display:flex;
+    flex: 1;
+    margin: 0%;
+  }
+  .left{
+    background: blue;
+    padding: 3em 0 3em 0;
+    flex: content;
+    width: 25%;
+    height: 80%;
+    position: absolute;
+  }
+  main{
+    background: rgb(0, 157, 255);
+    padding :0%;
+    flex:5 5 150px;
+    width: 50%;
+    position:absolute ;
+    right:24%;
+    height:80%;
+  }
+  .right{
+    background:rgb(28, 165, 28);
+    padding:3em 0 3em 0;
+    flex:1 1 100px;
+    position: absolute;
+    width: 25%;
+    left: 75%;
+    height: 80%;
+  }
+  footer{
+    background: rgb(0, 0, 0);
+    padding:0%;
+    position: absolute;
+    top: 100%;
+    width:100%
+  }
+ }
 
 
 button{
